@@ -6,8 +6,6 @@ env:
   LANG: ja_JP.UTF-8
   LC_ALL: C.UTF-8
   LANGUAGE: ja_JP.UTF-8
-  TGT_BRANCH: 'develop'
-  BASE_BRANCH: 'development'
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -15,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: ${{ env.TGT_BRANCH }}
+          ref: develop
           fetch-depth: 100
       - name: Set up git config
         run: |
@@ -26,9 +24,9 @@ jobs:
         id: st_mg
         continue-on-error: true
         run: |
-          git merge origin/${{ env.BASE_BRANCH }} --no-ff -m 'Auto merge'
+          git merge origin/staging --no-ff -m 'Auto merge'
       - name: Push merged branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git push -u origin ${{ env.TGT_BRANCH }}
+          git push -u origin develop
