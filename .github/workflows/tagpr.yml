@@ -14,3 +14,4 @@ jobs:
         with:
           tag: ${{ steps.tagpr.outputs.tag }}
         if: "steps.tagpr.outputs.tag != ''"
+      - run: echo 'check'
