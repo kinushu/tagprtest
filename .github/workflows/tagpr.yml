@@ -10,8 +10,10 @@ jobs:
       - uses: Songmu/tagpr@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: ./.github/actions/merge_stg_to_dev
-        with:
+      - run: echo $tag
+        env:
           tag: ${{ steps.tagpr.outputs.tag }}
-        if: "steps.tagpr.outputs.tag != ''"
+      - uses: ./.github/actions/merge_stg_to_dev
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: echo 'check'
