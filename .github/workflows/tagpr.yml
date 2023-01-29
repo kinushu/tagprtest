@@ -14,4 +14,6 @@ jobs:
         env:
           tag: ${{ steps.tagpr.outputs.tag }}
       - uses: ./.github/actions/merge_stg_to_dev
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: echo 'check'
