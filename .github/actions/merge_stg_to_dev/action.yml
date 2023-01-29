@@ -1,30 +1,22 @@
 name: merge_stg_to_dev
-env:
-  cache-version: v1
-  TZ: Asia/Tokyo
-  LOCALE: ja
-  LANG: ja_JP.UTF-8
-  LC_ALL: C.UTF-8
-  LANGUAGE: ja_JP.UTF-8
-jobs:
-  release:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          ref: develop
-          fetch-depth: 100
-      - name: Set up git config
-        run: |
-          git config --global user.email "ghactions@github.com"
-          git config --global user.name "ghactions"
-          git fetch --all
-      - name: Create merging branch
-        id: st_mg
-        continue-on-error: true
-        run: |
-          git merge origin/staging --no-ff -m 'Auto merge'
-      - name: Push merged branch
-        run: |
-          git push -u origin develop
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        ref: develop
+        fetch-depth: 100
+    - name: Set up git config
+      run: |
+        git config --global user.email "ghactions@github.com"
+        git config --global user.name "ghactions"
+        git fetch --all
+    - name: Create merging branch
+      id: st_mg
+      continue-on-error: true
+      run: |
+        git merge origin/staging --no-ff -m 'Auto merge'
+    - name: Push merged branch
+      run: |
+        git push -u origin develop
