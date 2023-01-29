@@ -1,4 +1,7 @@
-Test
+tagprtest
+
+git-flow 検証
+tagpr, git-pr-release 検証
 
 ## Git ブランチ運用検討
 
