@@ -1,4 +1,5 @@
 name: merge_stg_to_dev
+description: merge_stg_to_dev
 runs:
   using: "composite"
   steps:
@@ -8,15 +9,18 @@ runs:
         ref: develop
         fetch-depth: 100
     - name: Set up git config
+      shell: bash
       run: |
         git config --global user.email "ghactions@github.com"
         git config --global user.name "ghactions"
         git fetch --all
     - name: Create merging branch
+      shell: bash
       id: st_mg
       continue-on-error: true
       run: |
         git merge origin/staging --no-ff -m 'Auto merge'
     - name: Push merged branch
+      shell: bash
       run: |
         git push -u origin develop
