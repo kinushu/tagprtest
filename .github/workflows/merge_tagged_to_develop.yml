@@ -2,7 +2,7 @@ name: merge_tagged_to_develop
 on:
   create:
     tags:
-      - v[0-9]+.[0-9]+.[0-9]+
+      - 'v*'
 jobs:
   merge_tagged_to_develop:
     runs-on: ubuntu-latest
