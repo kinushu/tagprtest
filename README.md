@@ -5,9 +5,10 @@ tagpr, git-pr-release 検証
 
 ## Git ブランチ運用検討
 
-git-flow ベースに、メインブランチは staging とし、 main は後追いとする。
-
-staging ブランチ進行後、 develop にマージされる。
+- git-flow ベース
+- メインブランチは staging とし、 main は後追いとする。
+- staging ブランチ進行時に tagpr により、バージョン設定プルリク作成、マージ後、タグ発行。
+- タグ発行後、staging が develop にマージされる。
 
 ## private repo での確認
 
