@@ -8,6 +8,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: Songmu/tagpr@v1
+        id: tagpr
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo $tag
+        env:
+          tag: ${{ steps.tagpr.outputs.tag }}
+      - uses: ./.github/actions/merge_stg_to_dev
+        if: "steps.tagpr.outputs.tag != ''"
+        with:
+          tag: ${{ steps.tagpr.outputs.tag }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: echo 'check'
