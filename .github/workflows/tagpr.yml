@@ -16,8 +16,6 @@ jobs:
           tag: ${{ steps.tagpr.outputs.tag }}
       - uses: ./.github/actions/merge_stg_to_dev
         if: "steps.tagpr.outputs.tag != ''"
-        with:
-          tag: ${{ steps.tagpr.outputs.tag }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: echo 'check'
