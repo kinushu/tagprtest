@@ -7,6 +7,16 @@ tagpr, git-pr-release 検証
 
 - git-flow ベース
 - メインブランチは staging とし、 main は後追いとする。
+
+### 開発時
+
+- develop ブランチから feature ブランチ切る。
+- feature ブランチからdevelopへプルリクエスト、マージ。
+- (git-pr-releaseにより、 developをstagingへマージ依頼のプルリクエスト自動生成。)
+
+### リリース時
+
+- リリース処理開始は、developをstagingへマージすることでスタート。(上記の自動生成プルリクを使いたい。)
 - staging ブランチ進行時に tagpr により、バージョン設定プルリク作成、マージ後、タグ発行。
 - タグ発行後、staging が develop にマージされる。
 
