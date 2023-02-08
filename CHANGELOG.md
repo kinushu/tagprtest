@@ -2,6 +2,8 @@
 
 ## [v0.1.0](https://github.com/kinushu/tagprtest/compare/v0.0.15...v0.1.0) - 2023-02-08
 
+- [change] develop にバージョン付加するよう変更。 staging, main は追従していく。
+
 ## [v0.0.15](https://github.com/kinushu/tagprtest/compare/v0.0.14...v0.0.15) - 2023-02-08
 
 ## [v0.0.14](https://github.com/kinushu/tagprtest/compare/v0.0.13...v0.0.14) - 2023-02-02
