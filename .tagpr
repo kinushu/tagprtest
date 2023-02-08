@@ -38,5 +38,5 @@
 #
 [tagpr]
 	vPrefix = true
-	releaseBranch = develop
+	releaseBranch = main
 	versionFile = package.json
