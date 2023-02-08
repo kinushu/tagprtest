@@ -22,6 +22,9 @@ tagpr, git-pr-release 検証
 - CHANGELOG整え、マージ後、タグ発行。
 - タグ発行後、staging が タグ発行した箇所に進む。
 
+TODO:
+CHANGELOGでマージプルリク出したい。
+
 ## private repo での確認
 
 https://github.com/kinushu/tagprtest/settings/actions
