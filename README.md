@@ -7,8 +7,8 @@ tagpr, git-pr-release 検証
 
 - git-flow のブランチ名を拝借する。
 - リリースブランチは main
-- develop ブランチにまとめ、バージョン、tagを付加していく。
-- develop ブランチを、staging, main ブランチが追従する。
+  - develop ブランチにまとめ、バージョン、tagを付加していく。
+  - develop ブランチを、staging, main ブランチが追従する。
 
 ### 開発時
 
