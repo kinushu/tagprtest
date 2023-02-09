@@ -1,5 +1,7 @@
 # Changelog
 
+## [v0.1.6](https://github.com/kinushu/tagprtest/compare/v0.1.5...v0.1.6) - 2023-02-09
+
 ## [v0.1.5](https://github.com/kinushu/tagprtest/compare/v0.1.4...v0.1.5) - 2023-02-09
 
 - exclude pr-release labels
