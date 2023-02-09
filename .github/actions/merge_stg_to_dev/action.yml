@@ -1,4 +1,4 @@
-name: merge_stg_to_dev
+name: Merge staging to develop after release
 description: merge_stg_to_dev
 runs:
   using: "composite"
