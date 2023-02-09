@@ -1,5 +1,7 @@
 # Changelog
 
+## [v0.1.4](https://github.com/kinushu/tagprtest/compare/v0.1.3...v0.1.4) - 2023-02-09
+
 ## [v0.1.3](https://github.com/kinushu/tagprtest/compare/v0.1.2...v0.1.3) - 2023-02-09
 
 - Merge pull request #45 from kinushu/ft/revert_dev_split
