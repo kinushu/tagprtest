@@ -6,7 +6,7 @@ runs:
     - name: Checkout
       uses: actions/checkout@v3
       with:
-        ref: staging
+        ref: develop
         fetch-depth: 100
     - name: Set up git config
       shell: bash
@@ -19,8 +19,8 @@ runs:
       id: st_mg
       continue-on-error: true
       run: |
-        git merge origin/develop --ff -m 'Auto merge'
+        git merge origin/staging --no-ff -m 'Auto merge'
     - name: Push merged branch
       shell: bash
       run: |
-        git push -u origin staging
+        git push -u origin develop
