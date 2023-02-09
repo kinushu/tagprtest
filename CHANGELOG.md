@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## [v0.1.3](https://github.com/kinushu/tagprtest/compare/v0.1.2...v0.1.3) - 2023-02-09
+
+- Merge pull request #45 from kinushu/ft/revert_dev_split
 
 ## [v0.1.2](https://github.com/kinushu/tagprtest/compare/v0.1.1...v0.1.2) - 2023-02-08
 - mainにしてみる by @kinushu in https://github.com/kinushu/tagprtest/pull/43
