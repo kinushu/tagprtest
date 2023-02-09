@@ -1,4 +1,4 @@
-name: git-pr-release
+name: create_dev_to_stg_pr
 on:
   push:
     branches:

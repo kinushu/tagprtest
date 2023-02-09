@@ -1,4 +1,4 @@
-name: tagpr
+name: create_tagpr_release
 on:
   push:
     branches: ["staging"]
