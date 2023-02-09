@@ -1,5 +1,7 @@
 # Changelog
 
+## Unreleased
+
 ## [v0.1.2](https://github.com/kinushu/tagprtest/compare/v0.1.1...v0.1.2) - 2023-02-08
 - mainにしてみる by @kinushu in https://github.com/kinushu/tagprtest/pull/43
 
