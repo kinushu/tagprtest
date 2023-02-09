@@ -26,13 +26,13 @@ https://github.com/kinushu/tagprtest/releases
   - Release内容が自動生成される。
 - タグ発行後、staging が develop にマージされる。
 
-## private repo での確認
+## Private repository での確認
+
+GitHub Actions の設定確認。
 
 https://github.com/kinushu/tagprtest/settings/actions
 
-Workflow permissions
-Read and write permissions 指定
-
-checked
-Allow Github Actions to create and approve pull requests
-
+- Workflow permissions
+  - Read and write permissions 指定
+- Allow Github Actions to create and approve pull requests
+  - チェックされている。
