@@ -1,11 +1,11 @@
 {
   "name": "tagprtest",
   "version": "0.1.5",
-  "description": "Test",
+  "description": "Test git-flow",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }

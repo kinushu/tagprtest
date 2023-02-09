@@ -1,11 +1,10 @@
 # tagprtest
 
-git-flow 検証
-tagpr, git-pr-release 検証
+- 開発時のGitブランチ運用検証。
+  - git-flow ベースに検証している。
+- GitHub Actions での tagpr, git-pr-release 動作検証
 
-https://github.com/kinushu/tagprtest/releases
-
-## Git ブランチ運用検討
+## Gitブランチ運用
 
 - git-flow ベース
 - stagingブランチをバージョンタグ付加ブランチ,developからのマージブランチ, 検証バージョンとしていく。
