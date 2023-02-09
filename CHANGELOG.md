@@ -2,6 +2,8 @@
 
 ## [v0.1.5](https://github.com/kinushu/tagprtest/compare/v0.1.4...v0.1.5) - 2023-02-09
 
+- exclude pr-release labels
+
 ## [v0.1.4](https://github.com/kinushu/tagprtest/compare/v0.1.3...v0.1.4) - 2023-02-09
 
 - ファイル名名称整理。
