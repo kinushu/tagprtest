@@ -4,6 +4,8 @@
   - git-flow ベースに検証している。
 - GitHub Actions での tagpr, git-pr-release 動作検証
 
+記述追加してみる。
+
 ## Gitブランチ運用
 
 - git-flow ベース
