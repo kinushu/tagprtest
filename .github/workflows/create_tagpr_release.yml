@@ -18,4 +18,4 @@ jobs:
         if: "steps.tagpr.outputs.tag != ''"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: echo 'check'
+      - run: echo 'fin.'

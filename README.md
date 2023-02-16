@@ -4,8 +4,6 @@
   - git-flow ベースに検証している。
 - GitHub Actions での tagpr, git-pr-release 動作検証
 
-記述追加してみる。
-
 ## Gitブランチ運用
 
 - git-flow ベース
@@ -27,11 +25,7 @@
   - Release内容が自動生成される。
 - タグ発行後、staging が develop にマージされる。
 
-## Private repository での確認
-
-GitHub Actions の設定確認。
-
-https://github.com/kinushu/tagprtest/settings/actions
+## GitHub Actions の設定確認。
 
 - Workflow permissions
   - Read and write permissions 指定
