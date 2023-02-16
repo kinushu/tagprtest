@@ -4,6 +4,12 @@
   - git-flow ベースに検証している。
 - GitHub Actions での tagpr, git-pr-release 動作検証
 
+## 他リポジトリへの適用
+
+以下のフォルダ、ファイルを上書きする。
+- .github フォルダ
+- .tagpr (versionFileを調整)
+
 ## Gitブランチ運用
 
 - git-flow ベース
