@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.1.8](https://github.com/kinushu/tagprtest/compare/v0.1.7...v0.1.8) - 2023-02-16
+
+- 運用説明の調整。
+
 ## [v0.1.7](https://github.com/kinushu/tagprtest/compare/v0.1.6...v0.1.7) - 2023-02-10
 
 - 記述追加。
